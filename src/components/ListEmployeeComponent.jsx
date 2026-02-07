@@ -15,14 +15,10 @@ const ListEmployeeComponent = () => {
       });
   }, []);
 
-  function addNewEmployee() {
-    navigator('/add-employee');
-  }
-
   return (
     <div className='container'>
       <h2 className='text-center'>List of Employees</h2>
-      <button className='btn btn-primary mb-2' onClick={addNewEmployee}>Add Employee</button>
+      <button className='btn btn-primary mb-2' onClick={()=>navigator('/add-employee')}>Add Employee</button>
       <table className='table table-striped table-bordered'>
         <thead>
           <tr>
